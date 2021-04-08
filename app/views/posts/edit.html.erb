@@ -1,0 +1,20 @@
+<h3>スケジュール編集</h3>
+<div class="btn" align="center">
+  <%= form_with(model: @post, local: true) do |f| %>
+  <%= f.label :content, 'タスク' %>
+  <%= f.text_field :content %><br>
+
+  <%= f.label :start_on, '期間の開始日' %>
+  <%= f.date_field :start_on %><br>
+
+  <%= f.label :end_on, '期間の終了日' %>
+  <%= f.date_field :end_on %><br>
+
+  <%= f.submit 'スケジュールの編集を完了する' %>
+  <% end %>
+
+</div><br>
+
+
+
+<h3><%= link_to "スケジュール一覧に戻る", posts_path, class:"link-btn"%></h3>

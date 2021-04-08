@@ -1,0 +1,13 @@
+<div class="btn" align="center">
+  <h3>スケジュール詳細</h3>
+
+  <p>id: <%= @post.id %></p>
+  <p>タスク: <%= @post.content %></p>
+  <p>開始日: <%= @post.start_on %></p>
+  <p>終了日: <%= @post.end_on %></p>
+
+</div>
+<h3>
+  <%= link_to "スケジュール一覧に戻る", posts_path, class:"link-btn" %><br>
+  <%= link_to "スケジュールを編集する", edit_post_path(@post), class:"link-btn" %>
+</h3>
